@@ -6,5 +6,8 @@ export default function handler(req, res) {
       ...req.body
     }, request: {
       ...req.query
-    }});
+    }, headers: {
+         ...req.headers
+    }
+    });
   }
